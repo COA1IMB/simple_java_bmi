@@ -1,0 +1,21 @@
+// BMI Calculator by Caroline Jana Rölle 
+// Find formula here: https://www.apotheken-umschau.de/bmi-rechner
+
+public class BMI {
+    public static void main(String[] args) {
+
+        int weight = 80;
+        double height = 1.70;
+
+        double finalBmi = weight / (height * height);
+        System.out.println("Your BMI is: " + finalBmi);
+
+        if (finalBmi < 18.5) {
+            System.out.println("You're under weight");
+        } else if (finalBmi >= 18.5 && finalBmi <= 24.9) {
+            System.out.println("You're normal weight");
+        } else if (finalBmi >= 25) {
+            System.out.println("You're over weight");
+        }
+    }
+}
